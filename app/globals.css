@@ -614,12 +614,12 @@ button {
 
 .projects__swiper .swiper-button-prev {
   left: -22px;
-  z-index: 100; /* Ensure button sits above the card */
+  z-index: 100 !important;
 }
 
 .projects__swiper .swiper-button-next {
   right: -22px;
-  z-index: 100; /* Ensure button sits above the card */
+  z-index: 100 !important;
 }
 
 .projects__swiper .swiper-button-next::after,
@@ -635,7 +635,7 @@ button {
 }
 
 .projects__swiper {
-  overflow: visible; /* Prevents button from being clipped when pushed outside */
+  overflow: visible !important;
   padding-bottom: 3rem; 
 }
 
