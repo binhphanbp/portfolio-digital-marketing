@@ -1,33 +1,33 @@
-"use client";
-import React, { useState } from "react";
+'use client';
+import React, { useState } from 'react';
 
 export default function Contact() {
-  const [copyText, setCopyText] = useState("Copy email");
+  const [copyText, setCopyText] = useState('Copy email');
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const email = "codezenic11@gmail.com";
+    const email = 'codezenic11@gmail.com';
     navigator.clipboard
       .writeText(email)
       .then(() => {
-        setCopyText("Copied!");
+        setCopyText('Copied!');
         setCopied(true);
         setTimeout(() => {
-          setCopyText("Copy email");
+          setCopyText('Copy email');
           setCopied(false);
         }, 2000);
       })
       .catch(() => {
-        const textarea = document.createElement("textarea");
+        const textarea = document.createElement('textarea');
         textarea.value = email;
         document.body.appendChild(textarea);
         textarea.select();
-        document.execCommand("copy");
+        document.execCommand('copy');
         document.body.removeChild(textarea);
-        setCopyText("Copied!");
+        setCopyText('Copied!');
         setCopied(true);
         setTimeout(() => {
-          setCopyText("Copy email");
+          setCopyText('Copy email');
           setCopied(false);
         }, 2000);
       });
@@ -36,14 +36,10 @@ export default function Contact() {
   return (
     <section className="contact section" id="contact">
       <div className="contact__header">
-        <h2 className="section__title contact__title">Contact Us</h2>
+        <h2 className="section__title contact__title">Contact Me</h2>
         <p className="contact__subtitle">Tell us about your next project.</p>
-        <button
-          className="glow-btn"
-          id="contact-button"
-          onClick={handleCopy}
-        >
-          {copyText}{" "}
+        <button className="glow-btn" id="contact-button" onClick={handleCopy}>
+          {copyText}{' '}
           {copied ? (
             <i className="ri-check-line"></i>
           ) : (
@@ -54,7 +50,6 @@ export default function Contact() {
 
       <div className="contact__container container">
         <div className="contact__info">
-          
           <div className="contact__card">
             <div className="contact__card-content">
               <h3 className="contact__card-title">Email</h3>
@@ -147,7 +142,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
