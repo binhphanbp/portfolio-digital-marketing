@@ -603,13 +603,14 @@ button {
 /*=============== SWIPER NAVIGATION OVERRIDES ===============*/
 .projects-button-next,
 .projects-button-prev {
-  background-color: var(--first-color);
-  color: #fff;
+  background-color: var(--container-color);
+  border: 1.5px solid var(--first-color);
+  color: var(--first-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -637,12 +638,33 @@ button {
 .projects-button-prev i {
   font-size: 1.5rem;
   font-weight: var(--font-bold);
+  transition: transform 0.3s;
 }
 
 .projects-button-next:hover,
 .projects-button-prev:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--first-color);
+  color: #fff;
   transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 24px rgba(var(--first-color-rgb), 0.25);
+}
+
+.projects-button-next:hover i {
+  transform: translateX(2px);
+}
+.projects-button-prev:hover i {
+  transform: translateX(-2px);
+}
+
+.projects-button-next.swiper-button-disabled,
+.projects-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: transparent;
+  border-color: var(--text-color-light);
+  color: var(--text-color-light);
+  box-shadow: none;
 }
 
 .projects__swiper {
