@@ -5,7 +5,7 @@ export default function Work() {
   const [activeTab, setActiveTab] = useState("experience");
 
   return (
-    <section className="work section">
+    <section className="work section" id="work">
       <h2 className="section__title">
         <span>Our Work</span>
         <br />

@@ -59,11 +59,20 @@ export default function Header() {
           <ul className="nav__list">
             <li className="nav__item">
               <Link
+                href="#home"
+                className={`nav__link ${activeSection === "home" ? "active-link" : ""}`}
+                onClick={closeMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
                 href="#about"
                 className={`nav__link ${activeSection === "about" ? "active-link" : ""}`}
                 onClick={closeMenu}
               >
-                About Us
+                About
               </Link>
             </li>
             <li className="nav__item">
@@ -73,6 +82,24 @@ export default function Header() {
                 onClick={closeMenu}
               >
                 Projects
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                href="#work"
+                className={`nav__link ${activeSection === "work" ? "active-link" : ""}`}
+                onClick={closeMenu}
+              >
+                Work
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link
+                href="#services"
+                className={`nav__link ${activeSection === "services" ? "active-link" : ""}`}
+                onClick={closeMenu}
+              >
+                Services
               </Link>
             </li>
             <li className="nav__item">
