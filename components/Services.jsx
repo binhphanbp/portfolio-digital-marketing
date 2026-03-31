@@ -1,14 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 export default function Services() {
-  const [openItem, setOpenItem] = useState(null);
-
-  const toggleItem = (index) => {
-    if (openItem === index) setOpenItem(null);
-    else setOpenItem(index);
-  };
-
   return (
     <section className="services section">
       <h2 className="section__title">
@@ -17,9 +10,7 @@ export default function Services() {
 
       <div className="services__container container grid">
         {/* Service 1 */}
-        <div
-          className={`services__item ${openItem === 0 ? "services__open" : ""}`}
-        >
+        <div className="services__item">
           <h3 className="services__title">Developer</h3>
           <p className="services__description">
             Website creation with HTML, CSS, JavaScript. Professional websites
@@ -40,19 +31,10 @@ export default function Services() {
               <span className="services__tag">GitHub</span>
             </div>
           </div>
-
-          <button
-            className="services__toggle"
-            onClick={() => toggleItem(0)}
-          >
-            <i className="ri-arrow-down-s-line"></i>
-          </button>
         </div>
 
         {/* Service 2 */}
-        <div
-          className={`services__item ${openItem === 1 ? "services__open" : ""}`}
-        >
+        <div className="services__item">
           <h3 className="services__title">Design</h3>
           <p className="services__description">
             Web designer with Figma and Sketch, creating motion designs with
@@ -71,13 +53,6 @@ export default function Services() {
               <span className="services__tag">After Effects</span>
             </div>
           </div>
-
-          <button
-            className="services__toggle"
-            onClick={() => toggleItem(1)}
-          >
-            <i className="ri-arrow-down-s-line"></i>
-          </button>
         </div>
       </div>
     </section>

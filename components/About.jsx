@@ -26,8 +26,8 @@ export default function About() {
             development and design skills.
           </p>
 
-          <a href="/pdf/Anid-Cv.pdf" download className="button about__button">
-            Resume <i className="ri-file-download-line"></i>
+          <a href="/pdf/Anid-Cv.pdf" download className="glow-btn">
+            Resume <i className="ri-file-text-line"></i>
           </a>
         </div>
       </div>
