@@ -1064,6 +1064,17 @@ button {
   transition: color 0.3s;
 }
 
+/* Scroll Up Light mode UI enhancements */
+.light .scrollup {
+  background-color: var(--container-color);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* slight float effect to separate from white bg */
+}
+
+.light .scrollup__circle-base {
+  stroke: hsl(0, 0%, 90%); /* distinct track empty state */
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
