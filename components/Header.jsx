@@ -102,15 +102,6 @@ export default function Header() {
                 Services
               </Link>
             </li>
-            <li className="nav__item">
-              <Link
-                href="#contact"
-                className={`nav__link ${activeSection === "contact" ? "active-link" : ""}`}
-                onClick={closeMenu}
-              >
-                Contact
-              </Link>
-            </li>
           </ul>
 
           {/* Close button */}
