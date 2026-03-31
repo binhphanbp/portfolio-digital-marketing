@@ -156,10 +156,10 @@ export default function Projects() {
             </Swiper>
             
             {/* Custom Navigation Buttons outside Swiper */}
-            <div className="projects-button-prev swiper-button-prev">
+            <div className="projects-button-prev">
               <i className="ri-arrow-left-s-line"></i>
             </div>
-            <div className="projects-button-next swiper-button-next">
+            <div className="projects-button-next">
               <i className="ri-arrow-right-s-line"></i>
             </div>
           </>
