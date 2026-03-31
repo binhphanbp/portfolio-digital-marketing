@@ -2,10 +2,18 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
+import { useTheme } from "next-themes";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isBlur, setIsBlur] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -84,9 +92,24 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Toggle button */}
-        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-          <i className="ri-apps-2-line"></i>
+        <div style={{ display: "flex", alignItems: "center", columnGap: "1rem" }}>
+          {/* Theme button */}
+          {mounted && (
+            <i
+              className={theme === "light" ? "ri-moon-line" : "ri-sun-line"}
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              style={{
+                fontSize: "1.25rem",
+                color: "var(--title-color)",
+                cursor: "pointer",
+              }}
+            ></i>
+          )}
+
+          {/* Toggle button */}
+          <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+            <i className="ri-apps-2-line"></i>
+          </div>
         </div>
       </nav>
     </header>

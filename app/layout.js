@@ -9,19 +9,23 @@ export const metadata = {
   description: "Responsive portfolio website created by Bedimcode and converted to Next.js by Antigravity",
 };
 
+import { ThemeProvider } from "./ThemeProvider";
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="/css/remixicon.min.css" />
       </head>
       <body>
-        <Header />
-        {children}
-        <Footer />
-        <ScrollUp />
-        <CustomCursor />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <Header />
+          {children}
+          <Footer />
+          <ScrollUp />
+          <CustomCursor />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -41,6 +41,16 @@
   --z-fixed: 100;
 }
 
+/*========== Light Theme Variables ==========*/
+.light {
+  --title-color: hsl(0, 0%, 10%);
+  --text-color: hsl(0, 0%, 30%);
+  --text-color-light: hsl(0, 0%, 50%);
+  --body-color: hsl(0, 0%, 98%);
+  --container-color: hsl(0, 0%, 100%);
+  --border-color: hsl(0, 0%, 90%);
+}
+
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
