@@ -109,6 +109,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+::selection {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
