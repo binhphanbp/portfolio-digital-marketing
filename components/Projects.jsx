@@ -20,43 +20,47 @@ export default function Projects() {
         <span>Projects</span>
       </h2>
 
-      <div className="projects__container container">
+      <div className="projects__container container" style={{ position: "relative" }}>
         {mounted && (
-          <Swiper
-            modules={[Navigation, Pagination]}
-            loop={true}
-            navigation={true}
-            slidesPerView={1}
-            spaceBetween={24}
-            pagination={{ clickable: true }}
-            breakpoints={{
-              768: { slidesPerView: 2, spaceBetween: 24 },
-              1150: { slidesPerView: 3, spaceBetween: 24 },
-            }}
-            className="projects__swiper"
-          >
-            {/* Project 1 */}
-            <SwiperSlide className="projects__card">
-              <div className="projects__data">
-                <div className="projects__header">
-                  <span className="projects__number">01</span>
-                  <h3 className="projects__title">Web</h3>
+          <>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              loop={true}
+              navigation={{
+                prevEl: '.projects-button-prev',
+                nextEl: '.projects-button-next',
+              }}
+              slidesPerView={1}
+              spaceBetween={24}
+              pagination={{ clickable: true }}
+              breakpoints={{
+                768: { slidesPerView: 2, spaceBetween: 24 },
+                1150: { slidesPerView: 3, spaceBetween: 24 },
+              }}
+              className="projects__swiper"
+            >
+              {/* Project 1 */}
+              <SwiperSlide className="projects__card">
+                <div className="projects__data">
+                  <div className="projects__header">
+                    <span className="projects__number">01</span>
+                    <h3 className="projects__title">Web</h3>
+                  </div>
+                  <h2 className="projects__subtitle">
+                    Barbershop <br />
+                    website
+                  </h2>
+                  <span className="projects__description">Technologies used</span>
+                  <p className="projects__skills">
+                    HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
+                  </p>
                 </div>
-                <h2 className="projects__subtitle">
-                  Barbershop <br />
-                  website
-                </h2>
-                <span className="projects__description">Technologies used</span>
-                <p className="projects__skills">
-                  HTML, CSS, JavaScript, Gsap, Swiper Js and Figma.
-                </p>
-              </div>
-              <img
-                src="/img/projects-1.png"
-                alt="projects image"
-                className="projects__img"
-              />
-            </SwiperSlide>
+                <img
+                  src="/img/projects-1.png"
+                  alt="projects image"
+                  className="projects__img"
+                />
+              </SwiperSlide>
 
             {/* Project 2 */}
             <SwiperSlide className="projects__card">
@@ -149,7 +153,16 @@ export default function Projects() {
                 className="projects__img"
               />
             </SwiperSlide>
-          </Swiper>
+            </Swiper>
+            
+            {/* Custom Navigation Buttons outside Swiper */}
+            <div className="projects-button-prev swiper-button-prev">
+              <i className="ri-arrow-left-s-line"></i>
+            </div>
+            <div className="projects-button-next swiper-button-next">
+              <i className="ri-arrow-right-s-line"></i>
+            </div>
+          </>
         )}
       </div>
     </section>

@@ -601,8 +601,8 @@ button {
 }
 
 /*=============== SWIPER NAVIGATION OVERRIDES ===============*/
-.projects__swiper .swiper-button-next,
-.projects__swiper .swiper-button-prev {
+.projects-button-next,
+.projects-button-prev {
   background-color: var(--first-color);
   color: #fff;
   width: 44px;
@@ -610,32 +610,42 @@ button {
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.projects__swiper .swiper-button-prev {
+.projects-button-prev {
   left: -22px;
-  z-index: 100 !important;
 }
 
-.projects__swiper .swiper-button-next {
+.projects-button-next {
   right: -22px;
-  z-index: 100 !important;
 }
 
-.projects__swiper .swiper-button-next::after,
-.projects__swiper .swiper-button-prev::after {
+.projects-button-next::after,
+.projects-button-prev::after {
+  content: "";
+}
+
+.projects-button-next i,
+.projects-button-prev i {
   font-size: 1.5rem;
   font-weight: var(--font-bold);
 }
 
-.projects__swiper .swiper-button-next:hover,
-.projects__swiper .swiper-button-prev:hover {
+.projects-button-next:hover,
+.projects-button-prev:hover {
   background-color: var(--first-color-alt);
-  transform: scale(1.1);
+  transform: translateY(-50%) scale(1.1);
 }
 
 .projects__swiper {
-  overflow: visible !important;
   padding-bottom: 3rem; 
 }
 
