@@ -6,10 +6,11 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  --first-color: hsl(255, 60%, 64%);
-  --first-color-alt: hsl(255, 50%, 52%);
-  --first-color-light: hsl(255, 70%, 75%);
+  /*========== Colors (Blue Theme) ==========*/
+  --first-color: hsl(210, 80%, 55%);
+  --first-color-alt: hsl(210, 80%, 45%);
+  --first-color-light: hsl(210, 70%, 75%);
+  --first-color-rgb: 28, 140, 252;
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 75%);
   --text-color-light: hsl(0, 0%, 55%);
@@ -59,8 +60,8 @@
 
 .light .glow-btn {
   color: var(--first-color-alt);
-  background: linear-gradient(135deg, rgba(111, 44, 255, 0.15) 0%, rgba(111, 44, 255, 0.05) 100%);
-  box-shadow: 0 0 20px rgba(111, 44, 255, 0.2), inset 0 0 10px rgba(111, 44, 255, 0.1);
+  background: linear-gradient(135deg, rgba(var(--first-color-rgb), 0.15) 0%, rgba(var(--first-color-rgb), 0.05) 100%);
+  box-shadow: 0 0 20px rgba(var(--first-color-rgb), 0.2), inset 0 0 10px rgba(var(--first-color-rgb), 0.1);
 }
 
 .light .glow-btn i {
@@ -68,18 +69,18 @@
 }
 
 .light .glow-btn:hover {
-  background: linear-gradient(135deg, rgba(111, 44, 255, 0.25) 0%, rgba(111, 44, 255, 0.1) 100%);
-  box-shadow: 0 0 30px rgba(111, 44, 255, 0.3), inset 0 0 15px rgba(111, 44, 255, 0.15);
+  background: linear-gradient(135deg, rgba(var(--first-color-rgb), 0.25) 0%, rgba(var(--first-color-rgb), 0.1) 100%);
+  box-shadow: 0 0 30px rgba(var(--first-color-rgb), 0.3), inset 0 0 15px rgba(var(--first-color-rgb), 0.15);
 }
 
 .light .services__item {
   background: linear-gradient(
     160deg,
     var(--container-color) 0%,
-    hsl(255, 80%, 95%) 60%,
-    hsl(260, 80%, 90%) 100%
+    hsl(210, 80%, 95%) 60%,
+    hsl(210, 80%, 90%) 100%
   );
-  box-shadow: 0 12px 32px rgba(111, 44, 255, 0.08);
+  box-shadow: 0 12px 32px rgba(var(--first-color-rgb), 0.08);
 }
 
 /*========== Responsive typography ==========*/
