@@ -131,18 +131,26 @@ ul {
 
 a {
   text-decoration: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-button {
+button,
+.projects-button-next,
+.projects-button-prev {
   border: none;
   outline: none;
   font-family: var(--body-font);
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
