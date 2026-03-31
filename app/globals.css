@@ -578,17 +578,31 @@ button {
 
 .projects__img {
   width: 100%;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   object-fit: cover;
 }
 
-/* Swiper class */
+/* Swiper Override */
+.projects__swiper {
+  padding-bottom: 3rem; /* Additional breathing room */
+}
+
+.projects__swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem !important;
+  bottom: unset !important;
+}
+
 .swiper-pagination-bullet {
-  background-color: var(--text-color-light);
+  background-color: var(--text-color-light) !important;
+  opacity: 0.5 !important;
+  transition: opacity 0.3s, background-color 0.3s, transform 0.3s !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--first-color);
+  background-color: var(--first-color) !important;
+  opacity: 1 !important;
+  transform: scale(1.3) !important;
 }
 
 /*=============== WORK ===============*/
