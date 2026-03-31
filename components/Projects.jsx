@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function Projects() {
   const [mounted, setMounted] = useState(false);
@@ -22,8 +23,9 @@ export default function Projects() {
       <div className="projects__container container">
         {mounted && (
           <Swiper
-            modules={[Pagination]}
+            modules={[Navigation, Pagination]}
             loop={true}
+            navigation={true}
             slidesPerView={1}
             spaceBetween={24}
             pagination={{ clickable: true }}

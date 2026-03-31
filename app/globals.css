@@ -600,6 +600,43 @@ button {
   margin-top: 0.5rem;
 }
 
+/*=============== SWIPER NAVIGATION OVERRIDES ===============*/
+.projects__swiper .swiper-button-next,
+.projects__swiper .swiper-button-prev {
+  background-color: var(--first-color);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.projects__swiper .swiper-button-prev {
+  left: 0;
+}
+
+.projects__swiper .swiper-button-next {
+  right: 0;
+}
+
+.projects__swiper .swiper-button-next::after,
+.projects__swiper .swiper-button-prev::after {
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
+}
+
+.projects__swiper .swiper-button-next:hover,
+.projects__swiper .swiper-button-prev:hover {
+  background-color: var(--first-color-alt);
+  transform: scale(1.1);
+}
+
+.projects__swiper {
+  padding-bottom: 3rem; 
+  padding-inline: 22px; /* Exactly half of button width to create half-overlap without clipping */
+}
+
 .projects__skills {
   font-size: var(--smaller-font-size);
   color: var(--text-color);
