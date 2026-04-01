@@ -397,8 +397,10 @@ button,
 }
 
 .home__name {
-  font-size: var(--biggest-font-size);
+  font-size: clamp(2.5rem, 7vw, 4rem);
   line-height: 1.1;
+  white-space: nowrap;
+  letter-spacing: -1px;
 }
 
 .home__about {

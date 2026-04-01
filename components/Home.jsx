@@ -33,10 +33,9 @@ export default function Home() {
     <section className="home section" id="home">
       <div className="home__container container grid">
         <div className="home__info">
-          <span className="home__greeting">Hello, We are</span>
+          <span className="home__greeting">Hello, I'm</span>
           <h1 className="home__name">
-            Code <br />
-            Zenic
+            Kim Anh
           </h1>
         </div>
 
@@ -93,7 +92,7 @@ export default function Home() {
           </a>
         </div>
 
-        <a href="/pdf/Anid-Cv.pdf" download className="home__cv">
+        <a href="/pdf/KimAnh_CV.pdf" download className="home__cv">
           RESUME <i className="ri-file-download-line"></i>
         </a>
       </div>

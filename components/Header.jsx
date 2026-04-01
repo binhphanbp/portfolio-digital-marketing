@@ -53,7 +53,7 @@ export default function Header() {
     <header className={`header ${isBlur ? "blur-header" : ""}`} id="header">
       <nav className="nav container">
         <Link href="#" className="nav__logo">
-          CodeZenic.
+          Kim Anh.
         </Link>
         <div className={`nav__menu ${isMenuOpen ? "show-menu" : ""}`} id="nav-menu">
           <ul className="nav__list">
