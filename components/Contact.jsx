@@ -55,7 +55,7 @@ export default function Contact() {
               <h3 className="contact__card-title">Email</h3>
               <p className="contact__card-address">ngothikimanh26022006@gmail.com</p>
               <h3 className="contact__card-title">Location</h3>
-              <p className="contact__card-address">Vietnam</p>
+              <p className="contact__card-address">Ho Chi Minh City, Vietnam</p>
             </div>
           </div>
 
