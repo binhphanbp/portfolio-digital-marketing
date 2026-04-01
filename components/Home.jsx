@@ -59,36 +59,37 @@ export default function Home() {
 
         <div className="home__social">
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.facebook.com/ngothikimanh2602"
             target="_blank"
             rel="noreferrer"
             className="home__social-link"
           >
-            <i className="ri-linkedin-box-fill"></i>
+            <i className="ri-facebook-circle-fill"></i>
           </a>
           <a
-            href="https://github.com/"
+            href="https://www.tiktok.com/@kanh260206?_r=1&_t=ZS-95AJqOAz2W7"
             target="_blank"
             rel="noreferrer"
             className="home__social-link"
           >
-            <i className="ri-github-fill"></i>
+            <i className="ri-tiktok-fill"></i>
           </a>
           <a
-            href="https://dribbble.com/"
+            href="https://zalo.me/0373671560"
             target="_blank"
             rel="noreferrer"
             className="home__social-link"
+            title="0373671560"
           >
-            <i className="ri-dribbble-fill"></i>
+            <i className="ri-message-3-fill"></i>
           </a>
           <a
-            href="https://about.gitlab.com/"
+            href="mailto:ngothikimanh26022006@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="home__social-link"
           >
-            <i className="ri-gitlab-fill"></i>
+            <i className="ri-mail-send-fill"></i>
           </a>
         </div>
 

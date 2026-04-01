@@ -55,7 +55,7 @@ export default function Contact() {
               <h3 className="contact__card-title">Email</h3>
               <p className="contact__card-address">ngothikimanh26022006@gmail.com</p>
               <h3 className="contact__card-title">Location</h3>
-              <p className="contact__card-address">New Delhi, India</p>
+              <p className="contact__card-address">Vietnam</p>
             </div>
           </div>
 
@@ -65,36 +65,20 @@ export default function Contact() {
               <div className="contact__card-links-wrapper">
                 <div className="contact__card-links">
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.facebook.com/ngothikimanh2602"
                     target="_blank"
                     rel="noreferrer"
                     className="contact__card-link"
                   >
-                    Linkedin <i className="ri-arrow-right-up-line"></i>
+                    Facebook <i className="ri-arrow-right-up-line"></i>
                   </a>
                   <a
-                    href="https://github.com/"
+                    href="https://www.tiktok.com/@kanh260206?_r=1&_t=ZS-95AJqOAz2W7"
                     target="_blank"
                     rel="noreferrer"
                     className="contact__card-link"
                   >
-                    Github <i className="ri-arrow-right-up-line"></i>
-                  </a>
-                  <a
-                    href="https://dribbble.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="contact__card-link"
-                  >
-                    Dribble <i className="ri-arrow-right-up-line"></i>
-                  </a>
-                  <a
-                    href="https://about.gitlab.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="contact__card-link"
-                  >
-                    Gitlab <i className="ri-arrow-right-up-line"></i>
+                    TikTok <i className="ri-arrow-right-up-line"></i>
                   </a>
                 </div>
               </div>
@@ -103,35 +87,27 @@ export default function Contact() {
 
           <div className="contact__card">
             <div className="contact__card-content">
-              <h3 className="contact__card-title">Write Us & We'll Talk</h3>
+              <h3 className="contact__card-title">Let's Connect</h3>
               <div className="contact__card-links-wrapper">
                 <div className="contact__card-links">
                   <a
-                    href="#"
+                    href="https://zalo.me/0373671560"
                     target="_blank"
                     rel="noreferrer"
                     className="contact__card-link"
                   >
-                    WhatsApp <i className="ri-arrow-right-up-line"></i>
+                    Zalo <i className="ri-arrow-right-up-line"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="contact__card-link"
                   >
-                    linkedin <i className="ri-arrow-right-up-line"></i>
+                    LinkedIn <i className="ri-arrow-right-up-line"></i>
                   </a>
                   <a
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="contact__card-link"
-                  >
-                    Telegram <i className="ri-arrow-right-up-line"></i>
-                  </a>
-                  <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     target="_blank"
                     rel="noreferrer"
                     className="contact__card-link"
