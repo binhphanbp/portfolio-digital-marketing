@@ -6,7 +6,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    const email = 'codezenic11@gmail.com';
+    const email = 'ngothikimanh26022006@gmail.com';
     navigator.clipboard
       .writeText(email)
       .then(() => {
@@ -53,7 +53,7 @@ export default function Contact() {
           <div className="contact__card">
             <div className="contact__card-content">
               <h3 className="contact__card-title">Email</h3>
-              <p className="contact__card-address">codezenic11@gmail.com</p>
+              <p className="contact__card-address">ngothikimanh26022006@gmail.com</p>
               <h3 className="contact__card-title">Location</h3>
               <p className="contact__card-address">New Delhi, India</p>
             </div>
