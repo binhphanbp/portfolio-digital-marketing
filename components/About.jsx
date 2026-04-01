@@ -26,7 +26,7 @@ export default function About() {
             development and design skills.
           </p>
 
-          <a href="/pdf/Anid-Cv.pdf" download className="glow-btn">
+          <a href="/pdf/KimAnh_CV.pdf" download className="glow-btn">
             Resume <i className="ri-file-text-line"></i>
           </a>
         </div>
